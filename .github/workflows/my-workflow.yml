@@ -2,7 +2,8 @@ name: Learning GitHub Script
 on:
 issues:
 types: [opened] 
-jobs: comment:
+jobs:
+comment:
 runs-on: ubuntu-latest
 steps: - uses: actions/github-script@0.8.0 
 with: github-token: ${{secrets.GITHUB_TOKEN}}
